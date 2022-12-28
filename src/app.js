@@ -12,9 +12,24 @@ window.onload = function() {
   output.innerHTML = domains.join("<br>");
 };
 
+let pronoun = ["El", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
+let extension = [".com", ".es", ".net", "org"];
+
 function getAllCombinations(lista_1, lista_2, lista_3, lista_4) {
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
-  let extension = [".com", ".es", ".io", ".us"];
+  let domain = "";
+  let domains = [];
+  lista_1.forEach(l1 => {
+    lista_2.forEach(l2 => {
+      lista_3.forEach(l3 => {
+        lista_4.forEach(l4 => {
+          domain = `${l1}${l2}${l3}${l4}`;
+          domains.push(domain);
+          console.log(domain);
+        });
+      });
+    });
+  });
+  return domains;
 }
