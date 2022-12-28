@@ -12,4 +12,9 @@ window.onload = function() {
   output.innerHTML = domains.join("<br>");
 };
 
-function getAllCombinations(lista_1, lista_2, lista_3, lista_4) {}
+function getAllCombinations(lista_1, lista_2, lista_3, lista_4) {
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+  let extension = [".com", ".es", ".io", ".us"];
+}
